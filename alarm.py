@@ -19,6 +19,8 @@ def alarm():
         raw_data = request.get_data(as_text=True)
         print(raw_data)
 
+        # 这里可以添加处理告警的代码
+
         return make_response("ok", '200')
     except Exception as ex:
         print(ex.msg)
